@@ -46,6 +46,10 @@ func get_count(item_id: String) -> int:
 	return RunStateManager.run.inventory.get(item_id, 0)
 
 
+func get_all() -> Dictionary:
+	return RunStateManager.run.inventory.duplicate()
+
+
 func _load_item(item_id: String) -> ItemData:
 	var path: String = "res://data/items/%s.tres" % item_id
 	if not ResourceLoader.exists(path):

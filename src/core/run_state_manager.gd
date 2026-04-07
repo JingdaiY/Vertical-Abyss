@@ -1,6 +1,7 @@
-class_name RunStateManager extends Node
+extends Node
 
-## Autoload singleton. Single source of truth for all game state.
+## Autoload singleton (registered as "RunStateManager" in project settings).
+## Single source of truth for all game state.
 ## Run data is wiped on death; persistent data survives forever.
 
 var run: RunData = RunData.new()

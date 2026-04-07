@@ -1,8 +1,10 @@
 ; Engine configuration file.
 ; It's best edited using the editor UI and not directly,
-; since the format may change without notice.
-
-[configuration]
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
 
 config_version=5
 
@@ -10,12 +12,17 @@ config_version=5
 
 config/name="Vertical Abyss"
 config/description="垂直深渊 | Vertical Abyss — A roguelite survival game"
-config/features=PackedStringArray("4.6", "Web")
+run/main_scene="res://scenes/elevator/ElevatorHub.tscn"
+config/features=PackedStringArray("4.6")
 config/icon="res://icon.svg"
 
 [autoload]
 
 RunStateManager="*res://src/core/run_state_manager.gd"
+
+[configuration]
+
+config_version=5
 
 [rendering]
 

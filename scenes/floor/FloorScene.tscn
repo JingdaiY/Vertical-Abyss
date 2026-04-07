@@ -1,0 +1,47 @@
+[gd_scene load_steps=14 format=3 uid="uid://floor_scene"]
+
+[ext_resource type="Script" path="res://src/scenes/floor_scene.gd" id="1_floor"]
+[ext_resource type="Script" path="res://src/scenes/floor_map.gd" id="2_fmap"]
+[ext_resource type="Script" path="res://src/ui/fog_renderer.gd" id="3_fog"]
+[ext_resource type="Script" path="res://src/entities/player_controller.gd" id="4_player"]
+[ext_resource type="Script" path="res://src/systems/timer_system.gd" id="5_timer"]
+[ext_resource type="Script" path="res://src/systems/fog_of_war_state.gd" id="6_fogstate"]
+[ext_resource type="Script" path="res://src/systems/evacuation_detection.gd" id="7_evac"]
+[ext_resource type="Script" path="res://src/systems/death_system.gd" id="8_death"]
+[ext_resource type="Script" path="res://src/systems/inventory_system.gd" id="9_inv"]
+[ext_resource type="Script" path="res://src/ui/timer_hud.gd" id="10_thud"]
+[ext_resource type="Script" path="res://src/ui/inventory_hud.gd" id="11_ihud"]
+
+[node name="FloorScene" type="Node2D"]
+script = ExtResource("1_floor")
+
+[node name="FloorMap" type="Node2D" parent="."]
+script = ExtResource("2_fmap")
+
+[node name="FogRenderer" type="Node2D" parent="."]
+script = ExtResource("3_fog")
+z_index = 10
+
+[node name="Player" type="CharacterBody2D" parent="."]
+script = ExtResource("4_player")
+
+[node name="TimerSystem" type="Node" parent="."]
+script = ExtResource("5_timer")
+
+[node name="FogOfWarState" type="Node" parent="."]
+script = ExtResource("6_fogstate")
+
+[node name="EvacuationDetection" type="Node" parent="."]
+script = ExtResource("7_evac")
+
+[node name="DeathSystem" type="Node" parent="."]
+script = ExtResource("8_death")
+
+[node name="InventorySystem" type="Node" parent="."]
+script = ExtResource("9_inv")
+
+[node name="TimerHud" type="CanvasLayer" parent="."]
+script = ExtResource("10_thud")
+
+[node name="InventoryHud" type="CanvasLayer" parent="."]
+script = ExtResource("11_ihud")
