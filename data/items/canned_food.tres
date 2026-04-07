@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+item_id = "canned_food"
+display_name = "罐头"
+stack_limit = 5
+spawn_weight = 25.0
+lore_text = "标签已经模糊，但密封圈还在。也许能吃。"

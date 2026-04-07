@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+item_id = "old_battery"
+display_name = "旧电池"
+stack_limit = 8
+spawn_weight = 20.0
+lore_text = "残余电量显示 12%。足够做点什么。"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="FloorTypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/floor_type_data.gd" id="1"]
+[ext_resource type="Script" path="res://src/data/hazard_tile_data.gd" id="2"]
+
+[sub_resource type="Resource" id="hazard_broken_floor"]
+script = ExtResource("2")
+tile_id = "broken_floor"
+display_name = "破损地板"
+damage_per_step = 1
+spawn_density = 0.08
+
+[resource]
+script = ExtResource("1")
+type_id = "abandoned_industrial"
+display_name = "废弃工业区"
+hazard_tiles = [SubResource("hazard_broken_floor")]
+item_weight_overrides = {}

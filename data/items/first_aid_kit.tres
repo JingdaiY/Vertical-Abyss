@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+item_id = "first_aid_kit"
+display_name = "急救包"
+stack_limit = 3
+spawn_weight = 10.0
+lore_text = "里面的绷带还是折叠整齐的。有人曾经非常仔细地打包过它。"

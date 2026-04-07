@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+item_id = "fuel_barrel"
+display_name = "燃料桶"
+stack_limit = 2
+spawn_weight = 5.0
+lore_text = "沉甸甸的，液体在里面晃动。电梯的心脏需要这个。"
